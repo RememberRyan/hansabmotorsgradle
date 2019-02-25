@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{layout}">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <title>Legaster</title>
+      
+            
+     <link rel="icon" href="http://templines.rocks/html/legaster/favicon.ico" type="image/x-icon">
+     <link rel="shortcut icon" href="http://templines.rocks/html/legaster/favicon.ico" type="image/x-icon">
+      
+    <link href="./hansabmotors_files/master.css" rel="stylesheet">
+
+    <!-- SWITCHER -->
+    <link href="./hansabmotors_files/switcher.css" rel="stylesheet" id="switcher-css" media="all">
+    <link href="http://templines.rocks/html/legaster/assets/plugins/switcher/css/color1.css" rel="alternate stylesheet" title="color1" media="all">
+    <link href="http://templines.rocks/html/legaster/assets/plugins/switcher/css/color2.css" rel="alternate stylesheet" title="color2" media="all">
+    <link href="http://templines.rocks/html/legaster/assets/plugins/switcher/css/color3.css" rel="alternate stylesheet" title="color3" media="all">
+    <link href="http://templines.rocks/html/legaster/assets/plugins/switcher/css/color4.css" rel="alternate stylesheet" title="color4" media="all">
+    <link href="http://templines.rocks/html/legaster/assets/plugins/switcher/css/color5.css" rel="alternate stylesheet" title="color5" media="all">
+  </head>
+
+
+  <body>
+    <!-- Loader-->
+    <div id="page-preloader" style="display: none;"><span class="spinner border-t_second_b border-t_prim_a"></span></div>
+    <!-- Loader end-->
+
+
+    <!-- ========================== -->
+    <!-- SEARCH MODAL  -->
+    <!-- ========================== -->
+
+    <div class="header-search">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+            <div class="navbar-search">
+              <form action="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#" method="get" id="search-global-form" class="search-global">
+                <input type="text" placeholder="Type to search" autocomplete="off" name="s" id="search" value="" class="search-global__input">
+                <button class="search-global__btn"><i class="icon fa fa-search"></i></button>
+                <div class="search-global__note">Begin typing your search above and press return to search.</div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="search-close search-form_close close"><i class="fa fa-times"></i></button>
+    </div>
+
+    
+
+    <!-- ========================== -->
+    <!-- FULL SCREEN MENU  -->
+    <!-- ========================== -->
+
+    <div class="wrap-fixed-menu" id="fixedMenu" style="display: none;">
+      <nav class="fullscreen-center-menu">
+        <div class="menu-main-menu-container">
+          <ul id="menu-main-menu-1" class="nav navbar-nav">
+            <li class=""><a href="http://templines.rocks/html/legaster/home.html">Home</a></li>
+            <li class=""><a href="http://templines.rocks/html/legaster/vehicle-listings.html">Auto Listings</a></li>
+            <li class=""><a href="http://templines.rocks/html/legaster/news-grid.html">News</a></li>
+            <li class=""><a href="http://templines.rocks/html/legaster/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <button type="button" class="fullmenu-close"><i class="fa fa-times"></i></button>
+    </div>
+
+
+    <div class="l-theme animated-css" data-header="sticky" data-header-top="200">
+
+      <!-- Start Switcher -->
+      <div class="switcher-wrapper">
+        <div class="demo_changer">
+          <div class="demo-icon customBgColor"><i class="fa fa-cog fa-spin fa-2x"></i></div>
+          <div class="form_holder">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="predefined_styles">
+                  <div class="skin-theme-switcher">
+                    <h4>Color</h4>
+                    <a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#" data-switchcolor="color1" class="styleswitch" style="background-color:#ecba00;"> </a>
+                    <a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#" data-switchcolor="color2" class="styleswitch" style="background-color:#4fb0fd;"> </a>
+                    <a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#" data-switchcolor="color3" class="styleswitch" style="background-color:#fe5656;"> </a>
+                    <a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#" data-switchcolor="color4" class="styleswitch" style="background-color:#ff8300;"> </a>
+                    <a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#" data-switchcolor="color5" class="styleswitch" style="background-color:#02cc8b;"> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Switcher -->
+
+      <!-- HEADER -->
+      <header class="header         header-normal-width         navbar-fixed-top          header-background-trans-black-rgba0         header-color-white         header-logo-white          header-navibox-1-left header-navibox-2-right header-navibox-3-right header-navibox-4-right          header1--trans-black--menu-marker-arrow-normal-0-1-70-screen-1-1-1-1">
+
+        <div class="container container-boxed-width">
+          <nav id="nav" class="navbar">
+            <div class="container ">
+              <div class="header-navibox-1">
+                <button class="menu-mobile-button visible-xs-block js-toggle-mobile-slidebar toggle-menu-button">
+                  <span class="toggle-menu-button-icon"><span></span> <span></span> <span></span> <span></span>
+                    <span></span> <span></span></span>
+                </button>
+                <a class="navbar-brand scroll" href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">
+                    </a><a href="http://templines.rocks/html/legaster/index.html"><img class="normal-logo img-responsive" src="./hansabmotors_files/logo.png" alt="logo"><img class="scroll-logo img-responsive hidden-xs" src="./hansabmotors_files/logo.png" alt="logo"></a>
+                
+              </div>
+
+              <div class="header-navibox-4">
+                <div class="header-cart">
+                  <a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#"><i class="theme-fonts-ShoppingCart" aria-hidden="true"></i></a>
+                  <span class="header-cart-count">0</span>
+                </div>
+              </div>
+              <div class="header-navibox-3">
+                <ul class="nav navbar-nav hidden-xs">
+                  <li class="header-search-icon"><a class="btn_header_search" href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#"><i class="fa fa-search"></i></a></li>
+                  <li>
+                    <button class="js-toggle-screen toggle-menu-button">
+                    <span class="toggle-menu-button-icon"><span></span> <span></span> <span></span> <span></span> <span></span> <span></span></span>
+                  </button>
+                  </li>
+                  <li class="no-hover header-button"><a class="roadster-sell-car" href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">Sell Your Car</a></li>
+                </ul>
+              </div>
+
+              <div class="header-navibox-2">
+                <ul id="menu-main-menu-2" class="yamm main-menu nav navbar-nav  menu-marker-arrow">
+                  <li class="dropdown"><a href="http://templines.rocks/html/legaster/home-1.html">Home</a>
+                    
+                    <ul class="dropdown-menu" style="display: none;">
+                        <li><a href="http://templines.rocks/html/legaster/home-1.html">Dealer</a></li>
+                        <li><a href="http://templines.rocks/html/legaster/rental.html">Rental</a></li>
+                        <li><a href="http://templines.rocks/html/legaster/repair.html">Repair</a></li>
+                      </ul>
+                    
+                    </li>
+                     <li class=""><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#about">About</a></li>
+                     <li class=""><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#offers">Offers</a></li>
+                    
+                  <li class="dropdown"><a href="http://templines.rocks/html/legaster/vehicle-listings.html">Vehicle Listings</a>
+                      <ul class="dropdown-menu" style="display: none;">
+                        <li><a href="http://templines.rocks/html/legaster/vehicle-listings.html">Car Listings 1</a></li>
+                          <li><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html">Car Listings 2</a></li>
+                          <li><a href="http://templines.rocks/html/legaster/vehicle-listings_no-sidebar.html">Car Grid</a></li>
+                        <li><a href="http://templines.rocks/html/legaster/car-details.html">Car Details</a></li>
+                      </ul>
+                    </li>
+                  <li class="dropdown"><a href="http://templines.rocks/html/legaster/blog.html">News</a>
+                    
+                     <ul class="dropdown-menu" style="display: none;">
+                        <li><a href="http://templines.rocks/html/legaster/blog.html">Posts Listings</a></li>
+                        <li><a href="http://templines.rocks/html/legaster/blog-post.html">Post Single</a></li>
+                      </ul>
+                    
+                    </li>
+                  <li class=""><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#contact">Contact</a></li>
+                </ul>
+              </div>
+                
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header -->
+
+      <div class="section-bg section-bg_dark section-bg_60 section-bg-08">
+        <div class="bg-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="ui-block-title">
+                  <ol class="breadcrumb">
+                    <li><a href="http://templines.rocks/html/legaster/home-1.html">HOME</a></li>
+                    <li class="active">listings</li>
+                  </ol>
+                  <h1 class="ui-title-page">vehicle listings</h1>
+                </div>
+                <div class="ui-wrap-figure"><span class="ui-top-figure"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end ui-block-title -->
+
+
+      <div class="l-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-md-push-3">
+              <main class="l-main-content">
+                <div class="filter-goods">
+                  <div class="filter-goods__info">Showing results from<strong> 1 - 10</strong> of total<strong> 35</strong>
+                  </div>
+                  <div class="filter-goods__select"><span class="filter-goods__select-title hidden-xs">Sort by</span>
+                    <div class="btn-group bootstrap-select show-tick" style="width: 172px;"><button type="button" class="dropdown-toggle bs-placeholder ui-select" data-toggle="dropdown" role="button" title="Most Revelant"><span class="filter-option pull-left">Most Revelant</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="0"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">A-Z</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Z-A</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div><select class="selectpicker" data-width="172" title="Most Revelant" multiple="" data-max-options="1" tabindex="-98">
+                      <option>A-Z</option>
+                      <option>Z-A</option>
+                    </select></div>
+                    <div class="btns-switch"><i class="btns-switch__item js-view-list active icon fa fa-th-list"></i><i class="btns-switch__item js-view-th icon fa fa-th"></i>
+                    </div>
+                  </div>
+                </div><!-- end b-sorting -->
+
+
+                <div class="section-goods">
+                  <div class="b-goods-group b-goods-group_list">
+                    <div class="b-goods b-goods_img-right clearfix">
+                      <div class="b-goods__img">
+                        <img class="img-scale" src="./hansabmotors_files/1.jpg" alt="foto">
+                        <span class="b-goods__label bg-pink">used</span>
+                      </div>
+                      <div class="b-goods__inner">
+                        <div class="b-goods__header">
+                          <div class="b-goods__name">Nissan Armada 2018</div>
+                          <div class="b-goods__meta">
+                            <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
+                            <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
+                          </div>
+                        </div>
+
+                        <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
+                        <div class="b-goods__footer">
+                          <ul class="b-goods-descr list-unstyled">
+                            <li class="b-goods-descr__item">
+                              <span class="ic flaticon-gauge"></span>
+                              <span class="b-goods-descr__info">25 k</span>
+                            </li>
+                            <li class="b-goods-descr__item">
+                              <span class="ic flaticon-oil-1"></span>
+                              <span class="b-goods-descr__info">Petrol</span>
+                            </li>
+                            <li class="b-goods-descr__item">
+                              <span class="ic flaticon-gearshift"></span>
+                              <span class="b-goods-descr__info">Auto</span>
+                            </li>
+                            <li class="b-goods-descr__item">
+                              <span class="ic flaticon-engine"></span>
+                              <span class="b-goods-descr__info">252 hp<span class="b-goods-descr__info_l"> - 2.0 L</span></span>
+                            </li>
+                          </ul>
+                          <span class="b-goods__price">$245,000</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="b-goods b-goods_img-right clearfix">
+                      <div class="b-goods__img">
+                        <img class="img-scale" src="./hansabmotors_files/2.jpg" alt="foto">
+                        <span class="b-goods__label bg-pink">used</span>
+                      </div>
+                      <div class="b-goods__inner">
+                        <div class="b-goods__header">
+                          <div class="b-goods__name">Ferrari La F16</div>
+                          <div class="b-goods__meta">
+                            <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>BellSouth, TX</div>
+                            <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
+                          </div>
+                        </div>
+
+                        <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
+                        <div class="b-goods__footer">
+                          <ul class="b-goods-descr list-unstyled">
+                            <li class="b-goods-descr__item">
+                              <span class="ic flaticon-gauge"></span>
+                              <span class="b-goods-descr__info">25 k</span>
+                            </li>
+                            <li class="b-goods-descr__item">
+                              <span class="ic flaticon-oil-1"></span>
+                              <span class="b-goods-descr__info">Petrol</span>
+                            </li>
+                            <li class="b-goods-descr__item">
+                              <span class="ic flaticon-gearshift"></span>
+                              <span class="b-goods-descr__info">Auto</span>
+                            </li>
+                            <li class="b-goods-descr__item">
+                              <span class="ic flaticon-engine"></span>
+                              <span class="b-goods-descr__info">252 hp<span class="b-goods-descr__info_l"> - 2.0 L</span></span>
+                            </li>
+                          </ul>
+                          <span class="b-goods__price">$245,000</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="b-goods b-goods_img-right clearfix">
+                      <div class="b-goods__img">
+                        <img class="img-scale" src="./hansabmotors_files/3.jpg" alt="foto">
+                        <span class="b-goods__label bg-blue">new</span>
+                      </div>
+                      <div class="b-goods__inner">
+                        <div class="b-goods__header">
+                          <div class="b-goods__name">Mercedes Benz S 63</div>
+                          <div class="b-goods__meta">
+                            <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
+                            <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
+                          </div>
+                        </div>
+
+                        <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
+                        <div class="b-goods__footer">
+                          <ul class="b-goods-descr list-unstyled">
+                            <li class="b-goods-descr__item">
+                              <span class="ic flaticon-gauge"></span>
+                              <span class="b-goods-descr__info">25 k</span>
+                            </li>
+                            <li class="b-goods-descr__item">
+                              <span class="ic flaticon-oil-1"></span>
+                              <span class="b-goods-descr__info">Petrol</span>
+                            </li>
+                            <li class="b-goods-descr__item">
+                              <span class="ic flaticon-gearshift"></span>
+                              <span class="b-goods-descr__info">Auto</span>
+                            </li>
+                            <li class="b-goods-descr__item">
+                              <span class="ic flaticon-engine"></span>
+                              <span class="b-goods-descr__info">252 hp<span class="b-goods-descr__info_l"> - 2.0 L</span></span>
+                            </li>
+                          </ul>
+                          <span class="b-goods__price">$245,000</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+
+                    
+
+                    
+                  </div>
+
+                  <div class="text-center">
+                    <ul class="pagination">
+                      <li><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#"><i class="ic fa fa-angle-double-left"></i></a></li>
+                      <li class="active"><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">1</a></li>
+                      <li><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">2</a></li>
+                      <li><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">3</a></li>
+                      <li><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">4</a></li>
+                      <li><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">5</a></li>
+                      <li><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#"><i class="ic fa fa-angle-double-right"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </main><!-- end main-content -->
+            </div><!-- end col -->
+
+            <div class="col-md-3 col-md-pull-9">
+              <aside class="l-sidebar">
+                <form class="b-filter bg-grey">
+                  <h3 class="b-filter__title">Find Your Car <i class="ic flaticon-sedan-car-front"></i></h3>
+                  <div class="b-filter__inner">
+                    <div class="b-filter__group">
+                      <div class="b-filter__group-title">keyword</div>
+                      <input class="form-control" type="text" placeholder="Keyword...">
+                    </div>
+                    
+                    <div class="b-filter__group">
+                      <div class="b-filter__group-title">Make</div>
+                      <div class="btn-group bootstrap-select show-tick dropup" style="width: 100%;"><button type="button" class="dropdown-toggle bs-placeholder ui-select" data-toggle="dropdown" role="button" title="All Makes" aria-expanded="false"><span class="filter-option pull-left">All Makes</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox" style="max-height: 779px; overflow: hidden; min-height: 0px;"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false" style="max-height: 767px; overflow-y: auto; min-height: 0px;"><li data-original-index="0"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Make 1</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Make 2</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div><select class="selectpicker" data-width="100%" title="All Makes" multiple="" data-max-options="1" tabindex="-98">
+                        <option>Make 1</option>
+                        <option>Make 2</option>
+                      </select></div>
+                    </div>
+                    
+                    <div class="b-filter__group">
+                      <div class="b-filter__group-title">Models</div>
+                      <div class="btn-group bootstrap-select show-tick" style="width: 100%;"><button type="button" class="dropdown-toggle bs-placeholder ui-select" data-toggle="dropdown" role="button" title="All Models" aria-expanded="false"><span class="filter-option pull-left">All Models</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox" style="max-height: 345px; overflow: hidden; min-height: 0px;"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false" style="max-height: 333px; overflow-y: auto; min-height: 0px;"><li data-original-index="0"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Model 1</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Model 2</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Model 3</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div><select class="selectpicker" data-width="100%" title="All Models" multiple="" data-max-options="1" tabindex="-98">
+                        <option>Model 1</option>
+                        <option>Model 2</option>
+                        <option>Model 3</option>
+                      </select></div>
+                    </div>
+                    
+                    
+                    
+                  </div>
+                </form>
+                <!-- end .b-filter-->
+              </aside>
+              <!-- end .l-sidebar-->
+            </div><!-- end col -->
+          </div><!-- end row -->
+        </div><!-- end container -->
+      </div>
+
+      <!-- end b-subscribe -->
+
+
+      <footer class="footer">
+        <div class="section-bg section-bg_dark section-bg-09">
+          <div class="ui-decor-corners"><span class="ui-decor-corners__left"></span><span class="ui-decor-corners__right"></span></div>
+          <div class="footer__top bg-inner">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <img class="footer__logo center-block" src="./hansabmotors_files/logo-footer.png" alt="Roadster">
+                  <div class="ui-decor"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="footer__section">
+                    <div class="footer__title">About Roadster</div>
+                    <div class="footer__info">Roadster is nis aliquip consquat duis velit cillum dolore fugiat nulla pariatur excepteurt occaecat lorem ipsum dolor sit amt consecteur adipisicing eiusmod tempor incididuntus.</div>
+                    <div class="footer-contacts">
+                      <span class="footer-contacts__title">Phone:</span>
+                      <a href="tel:+16234759820" class="footer-contacts__info footer-contacts__info_lg">+1 (623) 475 9820</a>
+                    </div>
+                    <div class="footer-contacts">
+                      <span class="footer-contacts__title">email:</span>
+                      <a href="mailto:info@example.com" class="footer-contacts__info">info@example.com</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2">
+                  <div class="footer__section">
+                    <div class="footer__title">Useful Links</div>
+                    <ul class="footer__list list-unstyled">
+                      <li><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">Home</a></li>
+                      <li><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">Cars Listings</a></li>
+                      <li><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">Features</a></li>
+                      <li><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">Sell a vehicle</a></li>
+                      <li><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">Latest Vehicles</a></li>
+                      <li><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">Our Services</a></li>
+                      <li><a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">Contact us</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="footer__section">
+                    <div class="footer__title">Working Hours</div>
+                    <div class="footer-time">
+                      <span class="footer-time__name">Weekdays:</span>
+                      <span class="footer-time__info">9:00am – 8:00pm</span>
+                    </div>
+                    <div class="footer-time">
+                      <span class="footer-time__name">Saturday:</span>
+                      <span class="footer-time__info">10:00am – 6:00pm</span>
+                    </div>
+                    <div class="footer-time">
+                      <span class="footer-time__name">Sunday:</span>
+                      <span class="footer-time__info">Closed</span>
+                    </div>
+                    <ul class="footer-soc list-unstyled">
+                      <li class="footer-soc__item"><a class="footer-soc__link" href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#"><i class="ic fa fa-facebook"></i></a></li>
+                      <li class="footer-soc__item"><a class="footer-soc__link" href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#"><i class="ic fa fa-twitter"></i></a></li>
+                      <li class="footer-soc__item"><a class="footer-soc__link" href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#"><i class="ic fa fa-youtube-play"></i></a></li>
+                      <li class="footer-soc__item"><a class="footer-soc__link" href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#"><i class="ic fa fa-google-plus"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="footer__section">
+                    <div class="footer__title">Showroom</div>
+                    <div class="footer-address">
+                      <div class="footer-address__title">Roadster Dealers</div>
+                      <div class="footer-address__info">1514 Boggess Street<br>Carrollton TX<br>75006</div>
+                      <a href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#" class="footer-address__link">Get Directions</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="ui-scroll-top js-up"></span>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="ui-wrap-figure"><span class="ui-top-figure"></span></div>
+              <div class="copyright">Copyrights 2018 <span class="copyright__brand">Roadster</span> : All rights reserved. <a class="copyright__link" href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">Terms of Use</a> <a class="copyright__link" href="http://templines.rocks/html/legaster/vehicle-listings_sd-right.html#">Privacy Policy</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div><!-- end layout-theme -->
+
+
+    <!-- ++++++++++++-->
+    <!-- SCRIPTS-->
+    <!-- ++++++++++++-->
+
+    <script src="./hansabmotors_files/jquery-1.12.4.min.js"></script>
+    <script src="./hansabmotors_files/jquery-migrate-1.2.1.js"></script>
+
+    <!-- Switcher -->
+    <script src="./hansabmotors_files/dmss.js"></script>
+
+    <!-- Headers -->
+    <script src="./hansabmotors_files/slidebar.js"></script>
+    <script src="./hansabmotors_files/header.js"></script>
+    <script src="./hansabmotors_files/slidebars.js"></script>
+    <script src="./hansabmotors_files/doubletap.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="./hansabmotors_files/bootstrap.min.js"></script>
+
+    <!-- Select customization -->
+    <script src="./hansabmotors_files/bootstrap-select.min.js"></script>
+
+    <!-- Mail scripts-->
+    <script src="./hansabmotors_files/jqBootstrapValidation.js"></script>
+    <script src="./hansabmotors_files/contact_me.js"></script>
+
+    <!-- Progress numbers-->
+    <script src="./hansabmotors_files/waypoints.min.js"></script>
+
+    <!-- Scale images-->
+    <script src="./hansabmotors_files/ofi.min.js"></script>
+
+    <!-- Slider-->
+    <script src="./hansabmotors_files/owl.carousel.min.js"></script>
+
+    <!-- Pop-up window-->
+    <script src="./hansabmotors_files/jquery.prettyPhoto.js"></script>
+    <script src="./hansabmotors_files/jquery.easing.min.js"></script>
+
+    <!-- NoUiSlider-->
+    <script src="./hansabmotors_files/wNumb.js"></script>
+    <script src="./hansabmotors_files/nouislider.min.js"></script>
+
+
+    <!--User customization-->
+    <script src="./hansabmotors_files/custom.js"></script>
+
+  
+
+</body></html>
