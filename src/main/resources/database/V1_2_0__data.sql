@@ -1,4 +1,4 @@
-INSERT INTO user (userId, name, last_name, email, phone, description) VALUES (1, 'Teet', 'Järveküla', 'teet@gmail.com', '2415235');
+INSERT INTO user (userId, name, last_name, email, phone, ) VALUES (1, 'Teet', 'Järveküla', 'teet@gmail.com', '2415235');
 INSERT INTO user (userId, name, last_name, email, phone, description) VALUES (2, 'Pille', 'Purk', 'p.purk@gmail.com', '23523353453');
 INSERT INTO user (userId, name, last_name, email, phone, description) VALUES (3, 'Mati', 'Kaal', 'm.kaal@gmail.com', '26657346');
 INSERT INTO user (userId, name, last_name, email, phone, description) VALUES (4, 'Külli', 'Kukk', 'kukk@hotmail.com', '3456363456');

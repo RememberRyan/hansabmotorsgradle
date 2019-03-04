@@ -4,9 +4,6 @@ package hansabgroup.hansabmotorsgradle.entity;
  * Created by Ryan Alexander on 2019-03-03.
  */
 import lombok.*;
-import org.hibernate.annotations.BatchSize;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
